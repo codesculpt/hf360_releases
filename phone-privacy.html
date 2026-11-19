@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HF360 privacy policy</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #17211d; background: #f6f8f7; margin: 0; line-height: 1.6; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.4px; }
+  h2 { font-size: 19px; margin: 32px 0 6px; }
+  p, li { font-size: 16px; }
+  .meta { color: #5b6a64; font-size: 14px; }
+  ul { padding-left: 20px; }
+</style>
+</head>
+<body>
+<main>
+<h1>HF360 privacy policy</h1>
+<p class="meta">In effect from 19 November 2026</p>
+
+<p>HF360 is a household finance app. It has two parts: a program for your computer that holds and works out your figures, and a phone app that shows them. This page explains what happens to your information when you use the phone app. In short: your figures stay between your computer and your phone, they are encrypted, and the people who make HF360 never receive them. The program on your computer has its own settings for the services you choose to connect to it, such as a mailbox, and those are explained in that program.</p>
+
+<h2>What HF360 does not do</h2>
+<ul>
+  <li>It has no accounts, no sign-in and no profile.</li>
+  <li>It has no advertising and no tracking, and it does not sell or share your information.</li>
+  <li>It includes no analytics or crash-reporting tools.</li>
+  <li>It does not connect to your bank.</li>
+</ul>
+
+<h2>Where your figures live</h2>
+<p>Your computer works out every figure. The phone app shows a copy. To move that copy, HF360 uses a small online service that you set up yourself, in a Supabase project that you own. HF360 does not run a server of its own. The computer encrypts the figures before they leave it, using a key that is made when you pair a phone. The key travels only in the pairing code shown on your computer and scanned by your phone. It is never sent to the online service, so the service holds text it cannot read. The maker of HF360 cannot read it either. Supabase, which hosts the service, can see technical details of each request such as the network address, as any web host can.</p>
+<p>On the phone, the key is kept in the phone's secure storage (the Keychain on an iPhone). The saved copy of your figures, receipts waiting to be sent, and your conversation with the advisor are stored on the phone encrypted with that key.</p>
+
+<h2>Receipts and the camera</h2>
+<p>The phone app asks to use the camera for two things: scanning the pairing code, and reading the figures on a receipt. If you choose a photo from your library instead, the app reads only that photo. The text on the receipt is read on the phone. The photo itself is not saved and is not sent anywhere. Only the figures you confirm (shop, date, total, tax and category) are sent, encrypted, to your computer.</p>
+
+<h2>Notifications</h2>
+<p>If you switch notifications on, your computer asks Expo's push service to deliver bill reminders and alerts to your phone through Apple's notification system. To do this, your phone's notification address is stored with your household's encrypted data, and the text of each notification passes through Expo and Apple on its way. On your computer you can choose, for each type of notice, to leave names and amounts out of the text.</p>
+
+<h2>The advisor</h2>
+<p>The advisor is an AI model that runs on your computer. When you ask it a question from your phone, the question travels encrypted to your computer, and the answer travels back the same way. Your figures are not sent to an outside AI service. Answers are general information and not professional financial advice.</p>
+
+<h2>App updates</h2>
+<p>The phone app can fetch small updates over the air through Expo's update service. When it checks, it sends technical details such as the app version and the type of phone, and the service can see the network address of the request. No financial information is included.</p>
+
+<h2>Sample mode</h2>
+<p>The first screen offers a way to look around with invented figures. Sample mode works entirely on the phone. Nothing is sent or received.</p>
+
+<h2>Keeping and deleting your information</h2>
+<ul>
+  <li>Choosing Unpair this phone removes the key and the saved figures from the phone.</li>
+  <li>Choosing Reset pairing on your computer deletes the copy held by the online service and makes a new key, so every phone must be paired again.</li>
+  <li>Because the online service is your own, you can also delete your Supabase project at any time.</li>
+  <li>Deleting the app removes everything it stored on the phone.</li>
+</ul>
+
+<h2>Children</h2>
+<p>HF360 is a household money tool for adults and is not directed at children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be sent to jeliz.ach2026@gmail.com.</p>
+</main>
+</body>
+</html>
