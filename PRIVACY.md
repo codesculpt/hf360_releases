@@ -1,6 +1,6 @@
 # HF360 privacy policy
 
-Last updated: November 14, 2026
+Last updated: November 19, 2026
 
 HF360 (Household Finance 360) is a desktop app that keeps your household finances on your own computer. This page explains what the app does with your information.
 
@@ -12,8 +12,9 @@ Everything you enter or import stays in a database on your computer. That includ
 
 If you connect a Gmail mailbox, HF360 asks Google for read-only access. The app uses it to find bill and payment emails from the billers you list, and it reads the amount, due date and account reference from them.
 
-- HF360 cannot send, delete or change your mail.
+- With read-only access, HF360 cannot delete or change your mail.
 - Email content is read on your computer and is not sent to the developer or to any third party.
+- Sending is a separate permission that HF360 asks for only if you turn on email notifications. When you allow it, HF360 can send messages from that mailbox and nothing else. It sends only the reminders, alerts and monthly summaries you chose, and only to the household members you selected. It does not read or send any other mail with this permission.
 - The Google sign-in is stored in the Windows credential store on your computer.
 - You can disconnect a mailbox at any time in Settings, Mailboxes. You can also remove access from your Google Account under Security, Third-party apps.
 
@@ -22,6 +23,10 @@ HF360's use of information received from Google APIs follows the Google API Serv
 ## The built-in advisor
 
 The Personal Finance Advisor runs on an AI model installed on your computer. Your financial data is not sent to an online AI service.
+
+## The phone app
+
+HF360 has a companion app for iPhone and Android. Its privacy policy is at https://codesculpt.github.io/hf360_releases/phone-privacy.html. In short, your figures are encrypted on your computer before they reach your phone, through an online service that you set up and own. The developer cannot read them.
 
 ## Update checks
 
