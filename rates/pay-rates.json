@@ -1,125 +1,928 @@
 {
-  "schema": 1,
-  "published": "2026-11-20",
-  "countries": {
+ "schema": 2,
+ "published": "2026-11-21",
+ "years": {
+  "2026": {
+   "countries": {
     "CA": {
-      "year": 2026,
-      "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127)",
-      "federal": {
-        "brackets": [
-          [
-            58523,
-            0.14
-          ],
-          [
-            117045,
-            0.205
-          ],
-          [
-            181440,
-            0.26
-          ],
-          [
-            258482,
-            0.29
-          ],
-          [
-            null,
-            0.33
-          ]
-        ],
-        "bpaMax": 16452,
-        "bpaMin": 14829,
-        "bpaFrom": 181440,
-        "bpaTo": 258482,
-        "employmentAmount": 1501,
-        "cpp": {
-          "exemption": 3500,
-          "ceiling": 74600,
-          "rate": 0.0595,
-          "baseRate": 0.0495,
-          "ceiling2": 85000,
-          "rate2": 0.04
-        },
-        "ei": {
-          "ceiling": 68900,
-          "rate": 0.0163
-        }
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026",
+     "federal": {
+      "brackets": [
+       [
+        58523,
+        0.14
+       ],
+       [
+        117045,
+        0.205
+       ],
+       [
+        181440,
+        0.26
+       ],
+       [
+        258482,
+        0.29
+       ],
+       [
+        null,
+        0.33
+       ]
+      ],
+      "bpaMax": 16452,
+      "bpaMin": 14829,
+      "bpaFrom": 181440,
+      "bpaTo": 258482,
+      "employmentAmount": 1501,
+      "cpp": {
+       "exemption": 3500,
+       "ceiling": 74600,
+       "rate": 0.0595,
+       "baseRate": 0.0495,
+       "ceiling2": 85000,
+       "rate2": 0.04
+      },
+      "ei": {
+       "ceiling": 68900,
+       "rate": 0.0163
       }
+     }
     }
-  },
-  "regions": {
+   },
+   "regions": {
+    "CA-AB": {
+     "name": "Alberta",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Alberta",
+     "rules": {
+      "brackets": [
+       [
+        61200,
+        0.08
+       ],
+       [
+        154259,
+        0.1
+       ],
+       [
+        185111,
+        0.12
+       ],
+       [
+        246813,
+        0.13
+       ],
+       [
+        370220,
+        0.14
+       ],
+       [
+        null,
+        0.15
+       ]
+      ],
+      "bpa": 22769,
+      "supplement": {
+       "over": 4896,
+       "rate": 0.25
+      }
+     }
+    },
+    "CA-BC": {
+     "name": "British Columbia",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, British Columbia",
+     "rules": {
+      "brackets": [
+       [
+        50363,
+        0.056
+       ],
+       [
+        100728,
+        0.077
+       ],
+       [
+        115648,
+        0.105
+       ],
+       [
+        140430,
+        0.1229
+       ],
+       [
+        190405,
+        0.147
+       ],
+       [
+        265545,
+        0.168
+       ],
+       [
+        null,
+        0.205
+       ]
+      ],
+      "bpa": 13216,
+      "reduction": {
+       "kind": "phase",
+       "amount": 575,
+       "from": 25570,
+       "rate": 0.0356,
+       "until": 41722
+      }
+     }
+    },
+    "CA-MB": {
+     "name": "Manitoba",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Manitoba",
+     "rules": {
+      "brackets": [
+       [
+        47000,
+        0.108
+       ],
+       [
+        100000,
+        0.1275
+       ],
+       [
+        null,
+        0.174
+       ]
+      ],
+      "bpa": {
+       "max": 15780,
+       "min": 0,
+       "from": 200000,
+       "to": 400000
+      }
+     }
+    },
+    "CA-NB": {
+     "name": "New Brunswick",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, New Brunswick",
+     "rules": {
+      "brackets": [
+       [
+        52333,
+        0.094
+       ],
+       [
+        104666,
+        0.14
+       ],
+       [
+        193861,
+        0.16
+       ],
+       [
+        null,
+        0.195
+       ]
+      ],
+      "bpa": 13664
+     }
+    },
+    "CA-NL": {
+     "name": "Newfoundland and Labrador",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Newfoundland and Labrador",
+     "rules": {
+      "brackets": [
+       [
+        44678,
+        0.087
+       ],
+       [
+        89354,
+        0.145
+       ],
+       [
+        159528,
+        0.158
+       ],
+       [
+        223340,
+        0.178
+       ],
+       [
+        285319,
+        0.198
+       ],
+       [
+        570638,
+        0.208
+       ],
+       [
+        1141275,
+        0.213
+       ],
+       [
+        null,
+        0.218
+       ]
+      ],
+      "bpa": 13094
+     }
+    },
+    "CA-NS": {
+     "name": "Nova Scotia",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Nova Scotia",
+     "rules": {
+      "brackets": [
+       [
+        30995,
+        0.0879
+       ],
+       [
+        61991,
+        0.1495
+       ],
+       [
+        97417,
+        0.1667
+       ],
+       [
+        157124,
+        0.175
+       ],
+       [
+        null,
+        0.21
+       ]
+      ],
+      "bpa": 11932
+     }
+    },
+    "CA-NT": {
+     "name": "Northwest Territories",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Northwest Territories",
+     "rules": {
+      "brackets": [
+       [
+        53003,
+        0.059
+       ],
+       [
+        106009,
+        0.086
+       ],
+       [
+        172346,
+        0.122
+       ],
+       [
+        null,
+        0.1405
+       ]
+      ],
+      "bpa": 18198
+     }
+    },
+    "CA-NU": {
+     "name": "Nunavut",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Nunavut",
+     "rules": {
+      "brackets": [
+       [
+        55801,
+        0.04
+       ],
+       [
+        111602,
+        0.07
+       ],
+       [
+        181439,
+        0.09
+       ],
+       [
+        null,
+        0.115
+       ]
+      ],
+      "bpa": 19659
+     }
+    },
     "CA-ON": {
-      "name": "Ontario",
-      "year": 2026,
-      "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), Ontario",
-      "rules": {
-        "brackets": [
-          [
-            53891,
-            0.0505
-          ],
-          [
-            107785,
-            0.0915
-          ],
-          [
-            150000,
-            0.1116
-          ],
-          [
-            220000,
-            0.1216
-          ],
-          [
-            null,
-            0.1316
-          ]
-        ],
-        "bpa": 12989,
-        "surtax": [
-          [
-            5818,
-            0.2
-          ],
-          [
-            7446,
-            0.36
-          ]
-        ],
-        "premium": [
-          {
-            "over": 20000,
-            "base": 0,
-            "rate": 0.06,
-            "cap": 300
-          },
-          {
-            "over": 36000,
-            "base": 300,
-            "rate": 0.06,
-            "cap": 450
-          },
-          {
-            "over": 48000,
-            "base": 450,
-            "rate": 0.25,
-            "cap": 600
-          },
-          {
-            "over": 72000,
-            "base": 600,
-            "rate": 0.25,
-            "cap": 750
-          },
-          {
-            "over": 200000,
-            "base": 750,
-            "rate": 0.25,
-            "cap": 900
-          }
-        ]
-      }
+     "name": "Ontario",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Ontario",
+     "rules": {
+      "brackets": [
+       [
+        53891,
+        0.0505
+       ],
+       [
+        107785,
+        0.0915
+       ],
+       [
+        150000,
+        0.1116
+       ],
+       [
+        220000,
+        0.1216
+       ],
+       [
+        null,
+        0.1316
+       ]
+      ],
+      "bpa": 12989,
+      "surtax": [
+       [
+        5818,
+        0.2
+       ],
+       [
+        7446,
+        0.36
+       ]
+      ],
+      "reduction": {
+       "kind": "double",
+       "amount": 300
+      },
+      "premium": [
+       {
+        "over": 20000,
+        "base": 0,
+        "rate": 0.06,
+        "cap": 300
+       },
+       {
+        "over": 36000,
+        "base": 300,
+        "rate": 0.06,
+        "cap": 450
+       },
+       {
+        "over": 48000,
+        "base": 450,
+        "rate": 0.25,
+        "cap": 600
+       },
+       {
+        "over": 72000,
+        "base": 600,
+        "rate": 0.25,
+        "cap": 750
+       },
+       {
+        "over": 200000,
+        "base": 750,
+        "rate": 0.25,
+        "cap": 900
+       }
+      ]
+     }
+    },
+    "CA-PE": {
+     "name": "Prince Edward Island",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Prince Edward Island",
+     "rules": {
+      "brackets": [
+       [
+        33928,
+        0.095
+       ],
+       [
+        65820,
+        0.1347
+       ],
+       [
+        106890,
+        0.166
+       ],
+       [
+        142520,
+        0.1762
+       ],
+       [
+        200000,
+        0.19
+       ],
+       [
+        null,
+        0.2
+       ]
+      ],
+      "bpa": 15000
+     }
+    },
+    "CA-SK": {
+     "name": "Saskatchewan",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Saskatchewan",
+     "rules": {
+      "brackets": [
+       [
+        54532,
+        0.105
+       ],
+       [
+        155805,
+        0.125
+       ],
+       [
+        null,
+        0.145
+       ]
+      ],
+      "bpa": 20381
+     }
+    },
+    "CA-YT": {
+     "name": "Yukon",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2026, Yukon",
+     "rules": {
+      "brackets": [
+       [
+        58523,
+        0.064
+       ],
+       [
+        117045,
+        0.09
+       ],
+       [
+        181440,
+        0.109
+       ],
+       [
+        500000,
+        0.128
+       ],
+       [
+        null,
+        0.15
+       ]
+      ],
+      "bpa": "federal",
+      "employmentCredit": true
+     }
     }
+   }
+  },
+  "2027": {
+   "countries": {
+    "CA": {
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027",
+     "federal": {
+      "brackets": [
+       [
+        60044,
+        0.14
+       ],
+       [
+        120088,
+        0.205
+       ],
+       [
+        186157,
+        0.26
+       ],
+       [
+        265203,
+        0.29
+       ],
+       [
+        null,
+        0.33
+       ]
+      ],
+      "bpaMax": 16879,
+      "bpaMin": 15214,
+      "bpaFrom": 186157,
+      "bpaTo": 265203,
+      "employmentAmount": 1540,
+      "cpp": {
+       "exemption": 3500,
+       "ceiling": 76700,
+       "rate": 0.0575,
+       "baseRate": 0.0475,
+       "ceiling2": 87400,
+       "rate2": 0.04
+      },
+      "ei": {
+       "ceiling": 70800,
+       "rate": 0.0164
+      }
+     }
+    }
+   },
+   "regions": {
+    "CA-AB": {
+     "name": "Alberta",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Alberta",
+     "rules": {
+      "brackets": [
+       [
+        62424,
+        0.08
+       ],
+       [
+        157344,
+        0.1
+       ],
+       [
+        188813,
+        0.12
+       ],
+       [
+        251750,
+        0.13
+       ],
+       [
+        377625,
+        0.14
+       ],
+       [
+        null,
+        0.15
+       ]
+      ],
+      "bpa": 23225,
+      "supplement": {
+       "over": 4993.92,
+       "rate": 0.25
+      }
+     }
+    },
+    "CA-BC": {
+     "name": "British Columbia",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, British Columbia",
+     "rules": {
+      "brackets": [
+       [
+        50363,
+        0.056
+       ],
+       [
+        100728,
+        0.077
+       ],
+       [
+        115648,
+        0.105
+       ],
+       [
+        140430,
+        0.1229
+       ],
+       [
+        190405,
+        0.147
+       ],
+       [
+        265545,
+        0.168
+       ],
+       [
+        null,
+        0.205
+       ]
+      ],
+      "bpa": 13216,
+      "reduction": {
+       "kind": "phase",
+       "amount": 690,
+       "from": 25570,
+       "rate": 0.0356,
+       "until": 41722
+      }
+     }
+    },
+    "CA-MB": {
+     "name": "Manitoba",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Manitoba",
+     "rules": {
+      "brackets": [
+       [
+        47000,
+        0.108
+       ],
+       [
+        100000,
+        0.1275
+       ],
+       [
+        null,
+        0.174
+       ]
+      ],
+      "bpa": {
+       "max": 15780,
+       "min": 0,
+       "from": 200000,
+       "to": 400000
+      }
+     }
+    },
+    "CA-NB": {
+     "name": "New Brunswick",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, New Brunswick",
+     "rules": {
+      "brackets": [
+       [
+        53693,
+        0.094
+       ],
+       [
+        107388,
+        0.14
+       ],
+       [
+        198902,
+        0.16
+       ],
+       [
+        null,
+        0.195
+       ]
+      ],
+      "bpa": 14019
+     }
+    },
+    "CA-NL": {
+     "name": "Newfoundland and Labrador",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Newfoundland and Labrador",
+     "rules": {
+      "brackets": [
+       [
+        46152,
+        0.087
+       ],
+       [
+        92303,
+        0.145
+       ],
+       [
+        164792,
+        0.158
+       ],
+       [
+        230710,
+        0.178
+       ],
+       [
+        294734,
+        0.198
+       ],
+       [
+        589469,
+        0.208
+       ],
+       [
+        1178938,
+        0.213
+       ],
+       [
+        null,
+        0.218
+       ]
+      ],
+      "bpa": 15495
+     }
+    },
+    "CA-NS": {
+     "name": "Nova Scotia",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Nova Scotia",
+     "rules": {
+      "brackets": [
+       [
+        32080,
+        0.0879
+       ],
+       [
+        64160,
+        0.1495
+       ],
+       [
+        100827,
+        0.1667
+       ],
+       [
+        162624,
+        0.175
+       ],
+       [
+        null,
+        0.21
+       ]
+      ],
+      "bpa": 12350
+     }
+    },
+    "CA-NT": {
+     "name": "Northwest Territories",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Northwest Territories",
+     "rules": {
+      "brackets": [
+       [
+        54381,
+        0.059
+       ],
+       [
+        108765,
+        0.086
+       ],
+       [
+        176827,
+        0.122
+       ],
+       [
+        null,
+        0.1405
+       ]
+      ],
+      "bpa": 18672
+     }
+    },
+    "CA-NU": {
+     "name": "Nunavut",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Nunavut",
+     "rules": {
+      "brackets": [
+       [
+        57252,
+        0.04
+       ],
+       [
+        114503,
+        0.07
+       ],
+       [
+        186156,
+        0.09
+       ],
+       [
+        null,
+        0.115
+       ]
+      ],
+      "bpa": 20170
+     }
+    },
+    "CA-ON": {
+     "name": "Ontario",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Ontario",
+     "rules": {
+      "brackets": [
+       [
+        55023,
+        0.0505
+       ],
+       [
+        110049,
+        0.0915
+       ],
+       [
+        150000,
+        0.1116
+       ],
+       [
+        220000,
+        0.1216
+       ],
+       [
+        null,
+        0.1316
+       ]
+      ],
+      "bpa": 13261,
+      "surtax": [
+       [
+        5940,
+        0.2
+       ],
+       [
+        7603,
+        0.36
+       ]
+      ],
+      "reduction": {
+       "kind": "double",
+       "amount": 306
+      },
+      "premium": [
+       {
+        "over": 20000,
+        "base": 0,
+        "rate": 0.06,
+        "cap": 300
+       },
+       {
+        "over": 36000,
+        "base": 300,
+        "rate": 0.06,
+        "cap": 450
+       },
+       {
+        "over": 48000,
+        "base": 450,
+        "rate": 0.25,
+        "cap": 600
+       },
+       {
+        "over": 72000,
+        "base": 600,
+        "rate": 0.25,
+        "cap": 750
+       },
+       {
+        "over": 200000,
+        "base": 750,
+        "rate": 0.25,
+        "cap": 900
+       }
+      ]
+     }
+    },
+    "CA-PE": {
+     "name": "Prince Edward Island",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Prince Edward Island",
+     "rules": {
+      "brackets": [
+       [
+        33928,
+        0.095
+       ],
+       [
+        65820,
+        0.1347
+       ],
+       [
+        106890,
+        0.166
+       ],
+       [
+        142520,
+        0.1762
+       ],
+       [
+        200000,
+        0.19
+       ],
+       [
+        null,
+        0.2
+       ]
+      ],
+      "bpa": 15000
+     }
+    },
+    "CA-SK": {
+     "name": "Saskatchewan",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Saskatchewan",
+     "rules": {
+      "brackets": [
+       [
+        55950,
+        0.105
+       ],
+       [
+        159856,
+        0.125
+       ],
+       [
+        null,
+        0.145
+       ]
+      ],
+      "bpa": 21411
+     }
+    },
+    "CA-YT": {
+     "name": "Yukon",
+     "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), 124th edition, tables for 2027, Yukon",
+     "rules": {
+      "brackets": [
+       [
+        60044,
+        0.064
+       ],
+       [
+        120088,
+        0.09
+       ],
+       [
+        186157,
+        0.109
+       ],
+       [
+        500000,
+        0.128
+       ],
+       [
+        null,
+        0.15
+       ]
+      ],
+      "bpa": "federal",
+      "employmentCredit": true
+     }
+    }
+   }
   }
+ }
 }
