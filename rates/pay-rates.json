@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "published": "2026-11-20",
+  "countries": {
+    "CA": {
+      "year": 2026,
+      "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127)",
+      "federal": {
+        "brackets": [
+          [
+            58523,
+            0.14
+          ],
+          [
+            117045,
+            0.205
+          ],
+          [
+            181440,
+            0.26
+          ],
+          [
+            258482,
+            0.29
+          ],
+          [
+            null,
+            0.33
+          ]
+        ],
+        "bpaMax": 16452,
+        "bpaMin": 14829,
+        "bpaFrom": 181440,
+        "bpaTo": 258482,
+        "employmentAmount": 1501,
+        "cpp": {
+          "exemption": 3500,
+          "ceiling": 74600,
+          "rate": 0.0595,
+          "baseRate": 0.0495,
+          "ceiling2": 85000,
+          "rate2": 0.04
+        },
+        "ei": {
+          "ceiling": 68900,
+          "rate": 0.0163
+        }
+      }
+    }
+  },
+  "regions": {
+    "CA-ON": {
+      "name": "Ontario",
+      "year": 2026,
+      "source": "Canada Revenue Agency, Payroll Deductions Formulas (T4127), Ontario",
+      "rules": {
+        "brackets": [
+          [
+            53891,
+            0.0505
+          ],
+          [
+            107785,
+            0.0915
+          ],
+          [
+            150000,
+            0.1116
+          ],
+          [
+            220000,
+            0.1216
+          ],
+          [
+            null,
+            0.1316
+          ]
+        ],
+        "bpa": 12989,
+        "surtax": [
+          [
+            5818,
+            0.2
+          ],
+          [
+            7446,
+            0.36
+          ]
+        ],
+        "premium": [
+          {
+            "over": 20000,
+            "base": 0,
+            "rate": 0.06,
+            "cap": 300
+          },
+          {
+            "over": 36000,
+            "base": 300,
+            "rate": 0.06,
+            "cap": 450
+          },
+          {
+            "over": 48000,
+            "base": 450,
+            "rate": 0.25,
+            "cap": 600
+          },
+          {
+            "over": 72000,
+            "base": 600,
+            "rate": 0.25,
+            "cap": 750
+          },
+          {
+            "over": 200000,
+            "base": 750,
+            "rate": 0.25,
+            "cap": 900
+          }
+        ]
+      }
+    }
+  }
+}
