@@ -1,6 +1,6 @@
 {
- "schema": 2,
- "published": "2026-11-21",
+ "schema": 3,
+ "published": "2026-11-22",
  "years": {
   "2026": {
    "countries": {
@@ -408,6 +408,53 @@
        ]
       ],
       "bpa": 15000
+     }
+    },
+    "CA-QC": {
+     "name": "Quebec",
+     "source": "Revenu Québec, Principal Changes for 2026 and Formulas to Calculate Source Deductions and Contributions (TP-1015.F-V). Federal part: Canada Revenue Agency T4127, tables for 2026",
+     "rules": {
+      "brackets": [
+       [
+        54345,
+        0.14
+       ],
+       [
+        108680,
+        0.19
+       ],
+       [
+        132245,
+        0.24
+       ],
+       [
+        null,
+        0.2575
+       ]
+      ],
+      "bpa": 18952,
+      "contributionCredits": false,
+      "workerDeduction": {
+       "rate": 0.06,
+       "max": 1450
+      },
+      "federalAbatement": 0.165,
+      "pension": {
+       "exemption": 3500,
+       "ceiling": 74600,
+       "rate": 0.063,
+       "baseRate": 0.053,
+       "ceiling2": 85000,
+       "rate2": 0.04
+      },
+      "ei": {
+       "ceiling": 68900,
+       "rate": 0.013
+      },
+      "parental": {
+       "ceiling": 103000,
+       "rate": 0.0043
+      }
      }
     },
     "CA-SK": {
