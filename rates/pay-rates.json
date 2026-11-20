@@ -1,6 +1,6 @@
 {
- "schema": 3,
- "published": "2026-11-22",
+ "schema": 4,
+ "published": "2026-11-23",
  "years": {
   "2026": {
    "countries": {
@@ -45,6 +45,121 @@
       "ei": {
        "ceiling": 68900,
        "rate": 0.0163
+      }
+     }
+    },
+    "US": {
+     "source": "Internal Revenue Service, Revenue Procedure 2025-32. Social Security Administration, contribution and benefit base for 2026",
+     "federal": {
+      "brackets": {
+       "single": [
+        [
+         12400,
+         0.1
+        ],
+        [
+         50400,
+         0.12
+        ],
+        [
+         105700,
+         0.22
+        ],
+        [
+         201775,
+         0.24
+        ],
+        [
+         256225,
+         0.32
+        ],
+        [
+         640600,
+         0.35
+        ],
+        [
+         null,
+         0.37
+        ]
+       ],
+       "joint": [
+        [
+         24800,
+         0.1
+        ],
+        [
+         100800,
+         0.12
+        ],
+        [
+         211400,
+         0.22
+        ],
+        [
+         403550,
+         0.24
+        ],
+        [
+         512450,
+         0.32
+        ],
+        [
+         768700,
+         0.35
+        ],
+        [
+         null,
+         0.37
+        ]
+       ],
+       "head": [
+        [
+         17700,
+         0.1
+        ],
+        [
+         67450,
+         0.12
+        ],
+        [
+         105700,
+         0.22
+        ],
+        [
+         201750,
+         0.24
+        ],
+        [
+         256200,
+         0.32
+        ],
+        [
+         640600,
+         0.35
+        ],
+        [
+         null,
+         0.37
+        ]
+       ]
+      },
+      "standardDeduction": {
+       "single": 16100,
+       "joint": 32200,
+       "head": 24150
+      },
+      "socialSecurity": {
+       "ceiling": 184500,
+       "rate": 0.062
+      },
+      "medicare": {
+       "rate": 0.0145,
+       "extraRate": 0.009,
+       "extraOver": {
+        "single": 200000,
+        "joint": 250000,
+        "head": 200000
+       }
       }
      }
     }
@@ -507,6 +622,55 @@
       "bpa": "federal",
       "employmentCredit": true
      }
+    },
+    "US-FL": {
+     "name": "Florida",
+     "source": "Florida does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-NV": {
+     "name": "Nevada",
+     "source": "Nevada does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-NH": {
+     "name": "New Hampshire",
+     "source": "New Hampshire does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-SD": {
+     "name": "South Dakota",
+     "source": "South Dakota does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-TN": {
+     "name": "Tennessee",
+     "source": "Tennessee does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-TX": {
+     "name": "Texas",
+     "source": "Texas does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-WY": {
+     "name": "Wyoming",
+     "source": "Wyoming does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
     }
    }
   },
@@ -553,6 +717,121 @@
       "ei": {
        "ceiling": 70800,
        "rate": 0.0164
+      }
+     }
+    },
+    "US": {
+     "source": "Internal Revenue Service, Revenue Procedure 2026-35. Social Security Administration, contribution and benefit base for 2027",
+     "federal": {
+      "brackets": {
+       "single": [
+        [
+         12800,
+         0.1
+        ],
+        [
+         52025,
+         0.12
+        ],
+        [
+         109125,
+         0.22
+        ],
+        [
+         208325,
+         0.24
+        ],
+        [
+         264550,
+         0.32
+        ],
+        [
+         661375,
+         0.35
+        ],
+        [
+         null,
+         0.37
+        ]
+       ],
+       "joint": [
+        [
+         25600,
+         0.1
+        ],
+        [
+         104050,
+         0.12
+        ],
+        [
+         218250,
+         0.22
+        ],
+        [
+         416650,
+         0.24
+        ],
+        [
+         529100,
+         0.32
+        ],
+        [
+         793650,
+         0.35
+        ],
+        [
+         null,
+         0.37
+        ]
+       ],
+       "head": [
+        [
+         18250,
+         0.1
+        ],
+        [
+         69650,
+         0.12
+        ],
+        [
+         109100,
+         0.22
+        ],
+        [
+         208300,
+         0.24
+        ],
+        [
+         264550,
+         0.32
+        ],
+        [
+         661350,
+         0.35
+        ],
+        [
+         null,
+         0.37
+        ]
+       ]
+      },
+      "standardDeduction": {
+       "single": 16600,
+       "joint": 33200,
+       "head": 24925
+      },
+      "socialSecurity": {
+       "ceiling": 192300,
+       "rate": 0.062
+      },
+      "medicare": {
+       "rate": 0.0145,
+       "extraRate": 0.009,
+       "extraOver": {
+        "single": 200000,
+        "joint": 250000,
+        "head": 200000
+       }
       }
      }
     }
@@ -967,6 +1246,55 @@
       ],
       "bpa": "federal",
       "employmentCredit": true
+     }
+    },
+    "US-FL": {
+     "name": "Florida",
+     "source": "Florida does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-NV": {
+     "name": "Nevada",
+     "source": "Nevada does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-NH": {
+     "name": "New Hampshire",
+     "source": "New Hampshire does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-SD": {
+     "name": "South Dakota",
+     "source": "South Dakota does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-TN": {
+     "name": "Tennessee",
+     "source": "Tennessee does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-TX": {
+     "name": "Texas",
+     "source": "Texas does not tax wages",
+     "rules": {
+      "kind": "none"
+     }
+    },
+    "US-WY": {
+     "name": "Wyoming",
+     "source": "Wyoming does not tax wages",
+     "rules": {
+      "kind": "none"
      }
     }
    }
