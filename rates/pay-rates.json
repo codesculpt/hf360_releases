@@ -1,6 +1,6 @@
 {
- "schema": 4,
- "published": "2026-11-23",
+ "schema": 5,
+ "published": "2026-11-24",
  "years": {
   "2026": {
    "countries": {
@@ -630,6 +630,76 @@
       "kind": "none"
      }
     },
+    "US-IL": {
+     "name": "Illinois",
+     "source": "Illinois Department of Revenue, 2026 Withholding Tax Tables (IL-700-T)",
+     "rules": {
+      "kind": "flat",
+      "rate": 0.0495,
+      "exempt": {
+       "single": 2925,
+       "joint": 5850,
+       "head": 2925
+      }
+     }
+    },
+    "US-IN": {
+     "name": "Indiana",
+     "source": "Indiana Department of Revenue, income tax rates for 2026",
+     "note": "Indiana counties also tax income, at rates that differ by county. County tax is not included.",
+     "rules": {
+      "kind": "flat",
+      "rate": 0.0295,
+      "exempt": {
+       "single": 1000,
+       "joint": 2000,
+       "head": 1000
+      }
+     }
+    },
+    "US-KY": {
+     "name": "Kentucky",
+     "source": "Kentucky Department of Revenue, 2026 Withholding Tax Formula",
+     "note": "Many Kentucky cities and counties also tax wages. Local tax is not included.",
+     "rules": {
+      "kind": "flat",
+      "rate": 0.035,
+      "exempt": {
+       "single": 3360,
+       "joint": 3360,
+       "head": 3360,
+       "joint2": 3360
+      }
+     }
+    },
+    "US-MI": {
+     "name": "Michigan",
+     "source": "Michigan Department of Treasury, withholding tax information for 2026",
+     "note": "Some Michigan cities, Detroit among them, also tax income. City tax is not included.",
+     "rules": {
+      "kind": "flat",
+      "rate": 0.0425,
+      "exempt": {
+       "single": 5900,
+       "joint": 11800,
+       "head": 5900
+      }
+     }
+    },
+    "US-PA": {
+     "name": "Pennsylvania",
+     "source": "Pennsylvania Department of Revenue, personal income tax",
+     "note": "Pennsylvania municipalities also charge an earned income tax and a local services tax. Local taxes are not included.",
+     "rules": {
+      "kind": "flat",
+      "rate": 0.0307,
+      "exempt": {
+       "single": 0,
+       "joint": 0,
+       "head": 0
+      }
+     }
+    },
     "US-NV": {
      "name": "Nevada",
      "source": "Nevada does not tax wages",
@@ -1253,6 +1323,20 @@
      "source": "Florida does not tax wages",
      "rules": {
       "kind": "none"
+     }
+    },
+    "US-IN": {
+     "name": "Indiana",
+     "source": "Indiana Department of Revenue, income tax rates for 2027",
+     "note": "Indiana counties also tax income, at rates that differ by county. County tax is not included.",
+     "rules": {
+      "kind": "flat",
+      "rate": 0.029,
+      "exempt": {
+       "single": 1000,
+       "joint": 2000,
+       "head": 1000
+      }
      }
     },
     "US-NV": {
